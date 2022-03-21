@@ -25,3 +25,7 @@ variable "azurerm_network_interface" {
 variable "azurerm_windows_virtual_machine" {
     type = string
 }
+
+variable "datadisk" {
+    type = string
+}
