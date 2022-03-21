@@ -1,0 +1,7 @@
+resourcegroupname = "winvmrg"
+location = "central india"
+virtual_network_name = "winvnet"
+azurerm_subnet = "winsubnet"
+azurerm_public_ip = "winip"
+azurerm_network_interface = "winnic"
+azurerm_windows_virtual_machine = "winvm"
