@@ -1,4 +1,4 @@
-resource "azurerm_managed_disk" "datadisk" {
+resource "azurerm_managed_disk" "windisk" {
   name                 = var.datadisk
   location             = var.location
   resource_group_name  = azurerm_resource_group.winrg.name
@@ -12,7 +12,7 @@ resource "azurerm_managed_disk" "datadisk" {
 }
 
 resource "azurerm_virtual_machine_data_disk_attachment" "diskattach" {
-  managed_disk_id    = azurerm_managed_disk.datadisk.id
+  managed_disk_id    = azurerm_managed_disk.windisk.id
   virtual_machine_id = azurerm_windows_virtual_machine.winvm.id
   lun                = "10"
   caching            = "ReadWrite"
